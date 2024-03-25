@@ -1,38 +1,38 @@
 const questions = [
     {
-        question: "which is largest animal in the world?",
+        question: "Which is largest animal in the world ?",
         answer: [
-            { text: "shark", correct: false },
-            { text: "blue whale", correct: true },
-            { text: "elecphant", correct: false },
-            { text: "giraffe", correct: false },
+            { text: "Shark", correct: false },
+            { text: "Blue Whale", correct: true },
+            { text: "Elephant", correct: false },
+            { text: "Giraffe", correct: false },
         ]
     },
     {
-        question: "which is largest country in the world?",
+        question: "Which is largest country in the world ?",
         answer: [
-            { text: "vatican city", correct: true },
-            { text: "bhutan", correct: false },
-            { text: "nepal", correct: false },
-            { text: "shri lanka", correct: false },
+            { text: "Vatican City", correct: true },
+            { text: "Bhutan", correct: false },
+            { text: "Nepal", correct: false },
+            { text: "Shri Lanka", correct: false },
         ]
     },
     {
-        question: "which is largest desert in the world?",
+        question: "Which is largest desert in the world ?",
         answer: [
-            { text: "kolhari", correct: false },
-            { text: "gobi", correct: false },
-            { text: "sahara", correct: false },
-            { text: "antartica", correct: true },
+            { text: "Kolhari", correct: false },
+            { text: "Gobi", correct: false },
+            { text: "Sahara", correct: false },
+            { text: "Antartica", correct: true },
         ]
     },
     {
-        question: "which is smallest continent in the world?",
+        question: "Which is smallest continent in the world ?",
         answer: [
-            { text: "asia", correct: false },
-            { text: "australia", correct: true },
-            { text: "antartica", correct: false },
-            { text: "africa", correct: false },
+            { text: "Asia", correct: false },
+            { text: "Australia", correct: true },
+            { text: "Antartica", correct: false },
+            { text: "Africa", correct: false },
         ]
     }
 ]
@@ -92,12 +92,12 @@ function selectAnswer(e) {
         }
         button.disabled = true;
     });
-    nextButton.style.display = "block"
+    nextButton.style.display = "block";
 }
 
 function showScore() {
     resetState();
-    questionElement.innerHTML = `You scored ${score} oot of ${questions.length}!`;
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
     nextButton.innerHTML = "play again";
     nextButton.style.display = "block";
 }
